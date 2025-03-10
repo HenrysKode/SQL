@@ -4,7 +4,7 @@
 
 # Henry's Break Into Tech Portfolio
 
-## Welcome to my SQL Portflio! This code repository contains examples of SQL i've written. Feel free to take a look and reach out if you have any questions.
+## Welcome to my SQL Portfolio! This code repository contains examples of SQL i've written. Feel free to take a look and reach out if you have any questions.
 
 *Portfolio for students of the Break Into Tech Data Analytics Course* 
 
