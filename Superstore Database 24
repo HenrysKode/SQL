@@ -27,22 +27,30 @@ VALUES
 
 --This shows what data i was querying.
 
---Write a SQL query that orders the items by price.
-SELECT *
+-- Write a SQL query that orders the items by price.
+
+SELECT item_name, price
 FROM superstore
 ORDER BY price
 ;
---Write your own SQL query that will show a statistic about the item prices, like a sum, average, minimum, maximum, or count.
-SELECT AVG (price) AS average_price
+
+-- what is the MIN price in the table?
+
+SELECT MIN(price) 
 FROM superstore
 ;
---Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies"
-SELECT AVG(price) AS average_kitchen_supplies_price
+
+-- Write your own SQL query that will show a statistic about the price for items in the category of "Kitchen Supplies".
+
+SELECT AVG(price)
 FROM superstore
 WHERE category = 'Kitchen Supplies'
 ;
---Question: What is the total stock quantity for each category?
-SELECT category, SUM(stock_quantity) AS total_stock_quantity
+
+-- How many total items are in stock for each category in the superstore table?
+
+SELECT category, 
+SUM (stock_quantity) 
 FROM superstore
-GROUP BY category;
---This query calculates the total stock quantity for each category in the superstore table by summing the stock_quantity for items in each category. The results are grouped by the category column and labeled as total_stock_quantity
+GROUP BY category
+;
